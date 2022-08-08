@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Oleo Script Swash Caps', cursive;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(#000, transparent), url(../floppie/imgs/Artist_s_impression_of_the_James_Webb_Space_Telescope_pillars.jpg);
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left:40px;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+#flipbook .page{
+    background:#fff;
+}
+#flipbook .shadow,
+#flipbook.shadow{
+    -webkit-box-shadow:0 4px 10px #666;
+    -moz-box-shadow:0 4px 10px #666;
+    -ms-box-shadow:0 4px 10px #666;
+    -o-box-shadow:0 4px 10px #666;
+    box-shadow: 0 4px 10px #666;
+
+}
+
+#flipbook .page:not(.hard).odd {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 90%, rgba(250, 250, 250, 0.5) 94%, #999 100%);
+    box-shadow: inset 0 0 5px #666;
+    border-left: 1px solid #ccc;
+}
+#flipbook .page:not(.hard).even {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 90%, rgba(250, 250, 250, 0.5) 94%, #999 100%);
+    box-shadow: inset 0 0 5px #666;
+}
+#flipbook #first{
+    background-image: url(../floppie/imgs/baby-logedd-bd36851c67c32c3f5930f99e83c7eebbbb895febf614f42a7114b0e7c688fbd4.jpg);
+    background-position: center;
+}
+#flipbook #first h1{
+    cursor:pointer;
+    text-align: center;
+    font-weight: 400;
+    font-size:30px;
+    color:darksalmon;
+    margin:13px;
+    transition: 0.9s;
+}
+#flipbook #first h1:hover{
+    transform: translateY(30px);
+    font-size:49px;
+}
+#flipbook #preludium{
+    background: linear-gradient(to right,#e899a5, #FFC0CB);
+    justify-content: center;
+}
+#flipbook #preludium h1{
+    margin-top:10px;
+    text-align: center;
+    color:#57385c;
+}
+#flipbook #preludium p{
+    text-decoration: none;
+    text-align:justify;
+    color:#a75265;
+    padding:33px;
+}
+#flipbook #preludium1 {
+    background:linear-gradient(to left,#e899a5,#FFC0CB);
+}
+#flipbook #preludium1 h1{
+    margin-top: 10px;
+    text-align:center;
+    color:#57385c;
+   
+}
+#flipbook #preludium1 p{
+    padding:33px;
+    text-decoration:solid;
+    color:purple;
+    text-align:justify;
+
+}
+#flipbook #preludium2 {
+    align-items: center;
+    background: radial-gradient(elipse, #e8f4f8)
+}
+#flipbook #preludium2 #column {
+    float:left;
+    width:50%;
+}
+#flipbook #preludium2 #column p{
+    text-align: center;
+    font-size:21px;
+}
+#flipbook #preludium2:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+#flipbook #preludium2 #column1{
+    float:right;
+    width:50%;
+}
+#flipbook #preludium2 #column1 p{
+    text-align: center;
+    font-size:21px;
+}
+#flipbook #preludium2::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+#flipbook #preludium2 h1{
+    margin-top:10px;
+    text-align: center;
+    color:#57385c;
+}
+#flipbook #preludium2 h2{
+    padding:10px;
+    text-align: center;
+    color:#57385c;
+}
+#flipbook #preludium2 p{
+    padding:20px;
+    text-align:justify;
+    color:#a75265;
+}
+
+#flipbook #begin h1{
+    margin-top:7px;
+    text-align: center;
+    color:#57385c
+}
+#flipbook #begin img{
+    position:absolute;
+    background-size: cover;
+    height:100%;
+    width:100%;
+}
+#flipbook #sponsors #logo{
+    text-align:center;
+    background:blue;
+}
+#flipbook #sponsors #logo img {
+    align-items: flex-start;
+    width:30%;
+    height:30%;
+    margin-top:22px;
+    position:relative;
+}
+#flipbook #sponsors #can {
+    text-align: center;
+    background: #d3d3d3;
+}
+#flipbook #sponsors #can img {
+    width:66%;
+    height:66%;
+    padding-top:25px;
+    position: relative;
+
+}
+#flipbook #sponsors h1{
+    margin-top:10px;
+    text-align: center;
+    color:#57385c;
+}
+#flipbook #sponsors h2{
+    text-decoration: none;
+    margin:10px;
+    color:steelblue;
+    text-align: center;
+}
+#flipbook #sponsors p{
+    color:darkblue;
+    text-decoration: solid;
+    text-align:right;
+    padding-right:10px;
+}
+#flipbook #french{
+    text-align: center;
+    background: linear-gradient(white, #e6bbad , #add8e6);
+}
+#flipbook #french h1{
+    text-align:center;
+    text-decoration: none;
+    color:#57385c;
+    font-weight: 300;
+}
+#flipbook #french p {
+    cursor:pointer;
+    text-align:center;
+    color:#a75265;
+    font-size:23px;
+}
+#flipbook #cymraeg{
+    text-align: center;
+    background:linear-gradient(to right, #90ee90, #e6bbad);
+}
+#flipbook #cymraeg h1{
+    color:#57385c;
+    font-weight: 300;
+    text-align: center;
+}
+#flipbook #cymraeg #comment {
+    background:cornsilk;
+    text-align:center;
+    border-radius:12px;
+}
+#flipbook #cymraeg p{
+    text-align: center;
+    color:#a75265;
+    font-size:22px;
+}
+#flipbook #slovak{
+    text-align: center;
+    text-decoration: none;
+    background:linear-gradient( to right, #e6bbad, #add8e6);
+}
+#flipbook #slovak h1{
+    color:#57385c;
+    text-align: center;
+}
+#flipbook #slovak #circle-flag{
+    padding:22px;
+    margin:2px;
+
+}
+#flipbook #slovak #circle-flag img{
+    width:25%;
+    height:25%;
+    position: relative;
+    float:left;
+}
+#flipbook #slovak #circle-flag img::after{
+    content:"";
+    clear:both;
+    display:table;
+
+}
+#flipbook #slovak #habs{
+    padding-right:40px;
+
+}
+#flipbook #slovak #habs img{
+    width:30%;
+    height:30%;
+    position: relative;
+    float:right;
+}
+#flipbook #slovak #habs img:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+#flipbook #slovak #quote{
+    text-align: right;
+    padding-right:40px;
+    font-size:33px;
+
+}
+#flipbook #slovak h3{
+    font-size:22px;
+    text-decoration: none;
+    color:#57385c;
+}
+#flipbook #slovak #list{
+    text-align: center;
+    color:#a75265;
+    font-size:19px;
+}
+#flipbook #ask{
+    background:linear-gradient(to left,#e899a5,#FFC0CB);
+    
+}
+#flipbook #ask h1{
+    text-align:center;
+    color:#57385c;
+    padding-top: 10px;
+
+}
+#flipbook #ask h2{
+    font-size: 33px;
+    text-align: center;
+    color:#a75265;
+    padding:22px;
+}
+#flipbook #ask p{
+    font-size:22px;
+    padding:10px;
+    text-align: justify;
+    color:#a75265;
+    text-decoration: solid;
+}
+#flipbook #sami{
+    background:linear-gradient(to left,#e899a5,#FFC0CB);
+}
+#flipbook #sami h1{
+    text-align: center;
+    color:#57385c;
+    padding-top: 10px;
+
+}
+#flipbook #sami p{
+    text-align:center;
+    font-size: 22px;
+    padding:10px;
+    color:#a75265;
+    text-decoration: solid;
+}
+
+
+
